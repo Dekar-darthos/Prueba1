@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simulador de Examen</title>
+		<style>
+			body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+			}
+			#contador {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			background: #f0f0f0;
+			padding: 5px 10px;
+			border-radius: 5px;
+			}
+			#pregunta {
+			font-weight: bold;
+			margin: 20px 0;
+			font-size: 1.2em;
+			}
+			#opciones {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			margin-bottom: 20px;
+			}
+			button {
+			padding: 10px 15px;
+			background: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			}
+			#resultado {
+			margin-top: 20px;
+			font-weight: bold;
+			color: #2E7D32;
+			}
+			#botones {
+			display: flex;
+			gap: 10px;
+			margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contador"></div>
+		<div id="pregunta"></div>
+		<div id="opciones"></div>
+		<div id="resultado"></div>
+		<div id="botones">
+			<button id="anterior" style="display:none;">Anterior</button>
+			<button id="siguiente">Siguiente</button>
+			<button id="finalizar" style="display:none;">Ver Resultado</button>
+		</div>
+
+		<script src="preguntas.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
